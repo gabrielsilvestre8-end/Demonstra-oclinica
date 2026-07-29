@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Clin Vital Saúde Popular — Clínica Médica Popular no Jacintinho, Maceió | Consultas e Exames</title>
+<meta name="description" content="Clínica médica popular em Maceió (Jacintinho). Consultas com médicos especialistas, exames laboratoriais, ultrassonografia e odontologia com valor acessível. Agende pelo WhatsApp.">
+<meta name="keywords" content="clínica médica em Maceió, consulta popular em Maceió, médico no Jacintinho, odontologia Maceió, ultrassonografia Maceió, dermatologista Maceió, pediatra Jacintinho, clínica popular Maceió, exames laboratoriais Maceió">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Clin Vital Saúde Popular — Sua saúde é de Vital importância.">
+<meta property="og:description" content="Consultas, exames e odontologia no mesmo lugar, com atendimento humanizado e valor acessível. Jacintinho, Maceió — AL.">
+<meta property="og:image" content="assets/logo-clinvital.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#17B25F">
+<link rel="stylesheet" href="_ds/modernist-c13109f2-b0d9-41a5-9faa-d5c7399c0b88/styles.css">
+<script src="_ds/modernist-c13109f2-b0d9-41a5-9faa-d5c7399c0b88/_ds_bundle.js"></script>
+<script src="./image-slot.js"></script>
+<script src="https://unpkg.com/lucide@0.462.0/dist/umd/lucide.min.js"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MedicalClinic","name":"Clin Vital Saúde Popular","slogan":"Sua saúde é de Vital importância.","image":"assets/logo-clinvital.png","telephone":"+5582988258293","address":{"@type":"PostalAddress","streetAddress":"Rua Comendador José Geraldo da Silva, 101 — Galeria Rayol","addressLocality":"Maceió","addressRegion":"AL","postalCode":"57040-220","addressCountry":"BR"},"areaServed":["Maceió","Jacintinho","Feitosa","Farol","Trapiche","Prado","Vergel","Benedito Bentes"]}
+</script>
+<style>
+  :root{
+    --color-bg:#ffffff; --color-surface:#f4f7f6; --color-text:#0d1b16;
+    --color-accent:#17b25f; --color-accent-600:#10964f; --color-accent-700:#0c7a41;
+    --color-divider:rgba(13,27,22,.10);
+    --tint:color-mix(in srgb, var(--color-accent) 8%, #ffffff);
+    --tint-2:color-mix(in srgb, var(--color-accent) 16%, #ffffff);
+    --sky:#eef5fb; --sky-line:#d9e9f6; --sky-ink:#1f5f91;
+    --radius-md:12px;
+    --shadow-sm:0 1px 2px rgba(13,27,22,.05);
+    --shadow-md:0 8px 28px rgba(13,27,22,.07);
+    --shadow-lg:0 26px 70px rgba(13,27,22,.10);
+  }
+  html{scroll-behavior:smooth}
+  body{margin:0;background:#fff;font-size:16px;-webkit-font-smoothing:antialiased}
+  section[id]{scroll-margin-top:96px}
+  a{color:var(--color-accent-700)}
+  a:hover{color:var(--color-accent)}
+  p{text-wrap:pretty}
+  [data-reveal][data-armed]{opacity:0;transform:translateY(18px)}
+  [data-reveal][data-armed]{transition:opacity .75s cubic-bezier(.22,1,.36,1),transform .75s cubic-bezier(.22,1,.36,1)}
+  [data-reveal][data-in]{opacity:1;transform:none}
+  @media (max-width:940px){[data-desktop]{display:none!important}[data-mobile]{display:inline-flex!important}}
+  @media (prefers-reduced-motion:reduce){[data-reveal][data-armed]{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</helmet>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413"/></symbol></svg>
+
+<header ref="{{ headerRef }}" style="position:fixed;top:0;left:0;right:0;z-index:60;background:#fff;backdrop-filter:saturate(1.6) blur(14px);border-bottom:1px solid var(--color-divider);transition:box-shadow .3s,background .3s">
+  <div style="max-width:1200px;margin:0 auto;padding:12px clamp(18px,5vw,44px);display:flex;align-items:center;gap:clamp(16px,3vw,40px)">
+    <a href="#inicio" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--color-text);margin-right:auto">
+      <img src="assets/logo-clinvital.png" alt="Clin Vital Saúde Popular" width="42" height="42" style="width:42px;height:42px;border-radius:11px;object-fit:cover">
+      <span style="display:flex;flex-direction:column;line-height:1.05">
+        <span style="font-family:var(--font-heading);font-weight:800;font-size:17px;letter-spacing:-.02em">CLIN VITAL</span>
+        <span style="font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:rgba(13,27,22,.5)">Consultas e exames</span>
+      </span>
+    </a>
+    <nav data-desktop style="display:flex;align-items:center;gap:clamp(14px,2vw,28px)">
+      <a href="#especialidades" style="text-decoration:none;color:rgba(13,27,22,.72);font-size:14.5px;font-weight:600" style-hover="color:var(--color-accent-700)">Especialidades</a>
+      <a href="#exames" style="text-decoration:none;color:rgba(13,27,22,.72);font-size:14.5px;font-weight:600" style-hover="color:var(--color-accent-700)">Exames</a>
+      <a href="#odontologia" style="text-decoration:none;color:rgba(13,27,22,.72);font-size:14.5px;font-weight:600" style-hover="color:var(--color-accent-700)">Odontologia</a>
+      <a href="#sobre" style="text-decoration:none;color:rgba(13,27,22,.72);font-size:14.5px;font-weight:600" style-hover="color:var(--color-accent-700)">Sobre</a>
+      <a href="#localizacao" style="text-decoration:none;color:rgba(13,27,22,.72);font-size:14.5px;font-weight:600" style-hover="color:var(--color-accent-700)">Localização</a>
+    </nav>
+    <a href="{{ wa.header }}" target="_blank" rel="noopener" data-desktop style="display:inline-flex;align-items:center;gap:9px;background:var(--color-accent);color:#fff;text-decoration:none;font-family:var(--font-heading);font-weight:800;font-size:14px;padding:11px 20px;border-radius:999px;box-shadow:0 6px 18px color-mix(in srgb, var(--color-accent) 32%, transparent);transition:transform .25s,box-shadow .25s,background .25s" style-hover="background:var(--color-accent-600);transform:translateY(-1px);box-shadow:0 10px 24px color-mix(in srgb, var(--color-accent) 40%, transparent)">
+      <svg width="16" height="16"><use href="#wa"></use></svg>Agendar consulta</a>
+    <button type="button" data-mobile onClick="{{ toggleMenu }}" aria-label="Abrir menu" style="display:none;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid var(--color-divider);background:#fff;border-radius:12px;cursor:pointer;color:var(--color-text)">
+      <i data-lucide="menu" style="width:22px;height:22px"></i>
+    </button>
+  </div>
+  <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="border-top:1px solid var(--color-divider);padding:14px clamp(18px,5vw,44px) 22px;display:flex;flex-direction:column;gap:2px;background:#fff">
+      <a href="#especialidades" onClick="{{ closeMenu }}" style="padding:14px 4px;text-decoration:none;color:var(--color-text);font-weight:600;border-bottom:1px solid var(--color-divider)">Especialidades</a>
+      <a href="#exames" onClick="{{ closeMenu }}" style="padding:14px 4px;text-decoration:none;color:var(--color-text);font-weight:600;border-bottom:1px solid var(--color-divider)">Exames</a>
+      <a href="#odontologia" onClick="{{ closeMenu }}" style="padding:14px 4px;text-decoration:none;color:var(--color-text);font-weight:600;border-bottom:1px solid var(--color-divider)">Odontologia</a>
+      <a href="#sobre" onClick="{{ closeMenu }}" style="padding:14px 4px;text-decoration:none;color:var(--color-text);font-weight:600;border-bottom:1px solid var(--color-divider)">Sobre</a>
+      <a href="#localizacao" onClick="{{ closeMenu }}" style="padding:14px 4px;text-decoration:none;color:var(--color-text);font-weight:600;border-bottom:1px solid var(--color-divider)">Localização</a>
+      <a href="{{ wa.header }}" target="_blank" rel="noopener" onClick="{{ closeMenu }}" style="margin-top:14px;display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--color-accent);color:#fff;text-decoration:none;font-family:var(--font-heading);font-weight:800;font-size:15px;padding:15px 20px;border-radius:999px">
+        <svg width="17" height="17"><use href="#wa"></use></svg>Agendar pelo WhatsApp</a>
+    </div>
+  </sc-if>
+</header>
+
+<main style="padding-top:67px">
+
+<section id="inicio" style="padding:clamp(44px,6vw,80px) 0 clamp(56px,7vw,96px);background:linear-gradient(180deg,var(--tint) 0%,#ffffff 62%)">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,44px);display:grid;gap:clamp(36px,5vw,64px);grid-template-columns:repeat(auto-fit,minmax(min(430px,100%),1fr));align-items:center">
+    <div>
+      <div style="display:inline-flex;align-items:center;gap:9px;padding:7px 14px 7px 10px;border:1px solid var(--tint-2);background:#fff;border-radius:999px;font-size:11.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent-700)">
+        <i data-lucide="map-pin" style="width:14px;height:14px"></i>Jacintinho · Maceió — AL
+      </div>
+      <h1 style="font-size:clamp(40px,5.6vw,68px);line-height:1.02;letter-spacing:-.035em;margin:22px 0 0;text-wrap:balance">Sua saúde é de <span style="color:var(--color-accent-700)">Vital</span> importância.</h1>
+      <p style="font-size:clamp(16.5px,1.5vw,19px);line-height:1.6;color:rgba(13,27,22,.68);max-width:46ch;margin:22px 0 0">Consultas, exames e odontologia no mesmo lugar. Médicos especialistas, atendimento humanizado e valores que cabem no seu bolso.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:34px">
+        <a href="{{ wa.hero }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:var(--color-accent);color:#fff;text-decoration:none;font-family:var(--font-heading);font-weight:800;font-size:16px;padding:17px 28px;border-radius:999px;box-shadow:0 12px 30px color-mix(in srgb, var(--color-accent) 34%, transparent);transition:transform .25s,box-shadow .25s,background .25s" style-hover="background:var(--color-accent-600);transform:translateY(-2px);box-shadow:0 18px 40px color-mix(in srgb, var(--color-accent) 42%, transparent)" style-active="transform:translateY(0)">
+          <svg width="19" height="19"><use href="#wa"></use></svg>Agendar pelo WhatsApp</a>
+        <a href="#especialidades" style="display:inline-flex;align-items:center;gap:10px;background:#fff;color:var(--color-text);text-decoration:none;font-family:var(--font-heading);font-weight:800;font-size:16px;padding:17px 26px;border-radius:999px;border:1px solid var(--color-divider);transition:background .25s,border-color .25s" style-hover="background:var(--color-surface);border-color:rgba(13,27,22,.22)">Ver especialidades
+          <i data-lucide="arrow-right" style="width:17px;height:17px"></i></a>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;margin-top:22px;font-size:13.5px;color:rgba(13,27,22,.55)">
+        <i data-lucide="clock" style="width:15px;height:15px"></i>Resposta rápida no WhatsApp · Sem burocracia para marcar
+      </div>
+    </div>
+    <div style="position:relative">
+      <div style="position:relative;width:100%;aspect-ratio:4/4.4;max-height:min(76vh,660px);border-radius:26px;overflow:hidden;box-shadow:var(--shadow-lg);background:var(--color-surface)">
+        <image-slot id="cv-hero" shape="rect" placeholder="Foto: médico atendendo paciente em consultório moderno"></image-slot>
+        <div style="position:absolute;inset:auto 0 0 0;height:52%;background:linear-gradient(180deg,rgba(13,27,22,0) 0%,rgba(13,27,22,.55) 100%);pointer-events:none"></div>
+        <div style="position:absolute;left:16px;right:16px;bottom:16px;display:grid;grid-template-columns:1fr 1fr;gap:8px;pointer-events:none">
+          <div style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-radius:12px;padding:11px 12px;font-size:12.5px;font-weight:700;line-height:1.2">
+            <i data-lucide="heart-handshake" style="width:16px;height:16px;color:var(--color-accent-700);flex:none"></i>Atendimento humanizado</div>
+          <div style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-radius:12px;padding:11px 12px;font-size:12.5px;font-weight:700;line-height:1.2">
+            <i data-lucide="microscope" style="width:16px;height:16px;color:var(--color-accent-700);flex:none"></i>Exames no mesmo local</div>
+          <div style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-radius:12px;padding:11px 12px;font-size:12.5px;font-weight:700;line-height:1.2">
+            <i data-lucide="wallet" style="width:16px;height:16px;color:var(--color-accent-700);flex:none"></i>Consultas acessíveis</div>
+          <div style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-radius:12px;padding:11px 12px;font-size:12.5px;font-weight:700;line-height:1.2">
+            <i data-lucide="shield-check" style="width:16px;height:16px;color:var(--color-accent-700);flex:none"></i>Ambiente seguro</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="border-top:1px solid var(--color-divider);border-bottom:1px solid var(--color-divider);background:#fff">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,44px)">
+    <div data-reveal style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr))">
+      <div style="padding:34px 26px 34px 0;display:flex;gap:14px;align-items:flex-start;border-right:1px solid var(--color-divider)">
+        <i data-lucide="users" style="width:22px;height:22px;color:var(--color-accent);flex:none;margin-top:2px"></i>
+        <div><div style="font-family:var(--font-heading);font-weight:800;font-size:16px;margin-bottom:4px">Médicos especialistas</div><div style="font-size:14px;color:rgba(13,27,22,.6);line-height:1.5">Profissionais qualificados em diversas áreas.</div></div>
+      </div>
+      <div style="padding:34px 26px;display:flex;gap:14px;align-items:flex-start;border-right:1px solid var(--color-divider)">
+        <i data-lucide="microscope" style="width:22px;height:22px;color:var(--color-accent);flex:none;margin-top:2px"></i>
+        <div><div style="font-family:var(--font-heading);font-weight:800;font-size:16px;margin-bottom:4px">Exames no mesmo local</div><div style="font-size:14px;color:rgba(13,27,22,.6);line-height:1.5">Laboratório e ultrassonografia sem sair da clínica.</div></div>
+      </div>
+      <div style="padding:34px 26px;display:flex;gap:14px;align-items:flex-start;border-right:1px solid var(--color-divider)">
+        <i data-lucide="wallet" style="width:22px;height:22px;color:var(--color-accent);flex:none;margin-top:2px"></i>
+        <div><div style="font-family:var(--font-heading);font-weight:800;font-size:16px;margin-bottom:4px">Valor acessível</div><div style="font-size:14px;color:rgba(13,27,22,.6);line-height:1.5">Consultas particulares com preço popular.</div></div>
+      </div>
+      <div style="padding:34px 0 34px 26px;display:flex;gap:14px;align-items:flex-start">
+        <i data-lucide="message-circle" style="width:22px;height:22px;color:var(--color-accent);flex:none;margin-top:2px"></i>
+        <div><div style="font-family:var(--font-heading);font-weight:800;font-size:16px;margin-bottom:4px">Agendamento rápido</div><div style="font-size:14px;color:rgba(13,27,22,.6);line-height:1.5">Marque tudo pelo WhatsApp, em poucos minutos.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="especialidades" style="padding:clamp(72px,9vw,120px) 0;background:#fff">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,44px)">
+    <div data-reveal style="display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr));align-items:end;margin-bottom:44px">
+      <div>
+        <div style="font-size:11.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--color-accent-700);margin-bottom:16px">Especialidades</div>
+        <h2 style="font-size:clamp(30px,3.8vw,46px);line-height:1.06;letter-spacing:-.03em;margin:0;text-wrap:balance">Um time completo,<br>em um só endereço.</h2>
+      </div>
+      <p style="font-size:16.5px;line-height:1.65;color:rgba(13,27,22,.62);margin:0;max-width:52ch">Diversas especialidades médicas reunidas para resolver o que você precisa sem percorrer vários lugares da cidade.</p>
+    </div>
+
+    <div data-reveal style="display:grid;gap:1px;background:#fff;border:1px solid var(--color-divider);border-radius:22px;overflow:hidden;grid-template-columns:repeat(auto-fit,minmax(min(216px,100%),1fr))">
+      <div style="background:#fff;padding:28px 24px;display:flex;flex-direction:column;gap:16px;box-shadow:0 0 0 1px var(--color-divider);transition:background .3s" style-hover="background:var(--tint)">
+        <div style="width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--tint);color:var(--color-accent-700)"><i data-lucide="stethoscope" style="width:22px;height:22px"></i></div>
+        <div style="font-family:var(--font-heading);font-weight:800;font-size:17px;letter-spacing:-.01em">Clínico Geral</div>
+      </div>
+      <div style="background:#fff;padding:28px 24px;display:flex;flex-direction:column;gap:16px;box-shadow:0 0 0 1px var(--color-divider);transition:background .3s" style-hover="background:var(--tint)">
+        <div style="width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--tint);color:var(--color-accent-700)"><i data-lucide="baby" style="width:22px;height:22px"></i></div>
+        <div style="font-family:var(--font-heading);font-weight:800;font-size:17px;letter-spacing:-.01em">Pediatria</div>
+      </div>
+      <div style="background:#fff;padding:28px 24px;display:flex;flex-direction:column;gap:16px;box-shadow:0 0 0 1px var(--color-divider);transition:background .3s" style-hover="background:var(--tint)">
+        <div style="width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--tint);color:var(--color-accent-700)"><i data-lucide="sparkles" style="width:22px;height:22px"></i></div>
+        <div style="font-family:var(--font-heading);font-weight:800;font-size:17px;letter-spacing:-.01em">Dermatologia</div>
+      </div>
+      <div style="background:#fff;padding:28px 24px;display:flex;flex-direction:column;gap:16px;box-shadow:0 0 0 1px var(--color-divider);transition:background .3s" style-hover="background:var(--tint)">
+        <div style="width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--tint);color:var(--color-accent-700)"><i data-lucide="flower-2" style="width:22px;height:22px"></i></div>
+        <div style="font-family:var(--font-heading);font-weight:800;font-size:17px;letter-spacing:-.01em">Ginecologia</div>
+      </div>
+      <div style="background:#fff;padding:28px 24px;display:flex;flex-direction:column;gap:16px;box-shadow:0 0 0 1px var(--color-divider);transition:background .3s" style-hover="background:var(--tint)">
+        <div style="width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--tint);color:var(--color-accent-700)"><i data-lucide="heart-pulse" style="width:22px;height:22px"></i></div>
+        <div style="font-family:var(--font-heading);font-weight:800;font-size:17px;letter-spacing:-.01em">Cardiologia</div>
+      </div>
+      <div style="background:#fff;padding:28px 24px;display:flex;flex-direction:column;gap:16px;box-shadow:0 0 0 1px var(--color-divider);transition:background .3s" style-hover="background:var(--tint)">
+        <div style="width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--tint);color:var(--color-accent-700)"><i data-lucide="bone" style="width:22px;height:22px"></i></div>
+        <div style="font-family:var(--font-heading);font-weight:800;font-size:17px;letter-spacing:-.01em">Ortopedia</div>
+      </div>
+      <div style="background:#fff;padding:28px 24px;display:flex;flex-direction:column;gap:16px;box-shadow:0 0 0 1px var(--color-divider);transition:background .3s" style-hover="background:var(--tint)">
+        <div style="width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--tint);color:var(--color-accent-700)"><i data-lucide="activity" style="width:22px;height:22px"></i></div>
+        <div style="font-family:var(--font-heading);font-weight:800;font-size:17px;letter-spacing:-.01em">Endocrinologia</div>
+      </div>
+      <div style="background:#fff;padding:28px 24px;display:flex;flex-direction:column;gap:16px;box-shadow:0 0 0 1px var(--color-divider);transition:background .3s" style-hover="background:var(--tint)">
+        <div style="width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--tint);color:var(--color-accent-700)"><i data-lucide="brain" style="width:22px;height:22px"></i></div>
+        <div style="font-family:var(--font-heading);font-weight:800;font-size:17px;letter-spacing:-.01em">Neurologia</div>
+      </div>
+      <div style="background:#fff;padding:28px 24px;display:flex;flex-direction:column;gap:16px;box-shadow:0 0 0 1px var(--color-divider);transition:background .3s" style-hover="background:var(--tint)">
+        <div style="width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--tint);color:var(--color-accent-700)"><i data-lucide="message-circle-heart" style="width:22px;height:22px"></i></div>
+        <div style="font-family:var(--font-heading);font-weight:800;font-size:17px;letter-spacing:-.01em">Psicologia</div>
+      </div>
+      <div style="background:#fff;padding:28px 24px;display:flex;flex-direction:column;gap:16px;box-shadow:0 0 0 1px var(--color-divider);transition:background .3s" style-hover="background:var(--tint)">
+        <div style="width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--tint);color:var(--color-accent-700)"><i data-lucide="apple" style="width:22px;height:22px"></i></div>
+        <div style="font-family:var(--font-heading);font-weight:800;font-size:17px;letter-spacing:-.01em">Nutrição</div>
+      </div>
+      <div style="background:#fff;padding:28px 24px;display:flex;flex-direction:column;gap:16px;box-shadow:0 0 0 1px var(--color-divider);transition:background .3s" style-hover="background:var(--tint)">
+        <div style="width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--tint);color:var(--color-accent-700)"><i data-lucide="smile" style="width:22px;height:22px"></i></div>
+        <div style="font-family:var(--font-heading);font-weight:800;font-size:17px;letter-spacing:-.01em">Odontologia</div>
+      </div>
+      <a href="{{ wa.esp }}" target="_blank" rel="noopener" style="background:var(--color-text);color:#fff;text-decoration:none;padding:28px 24px;display:flex;flex-direction:column;gap:16px;box-shadow:0 0 0 1px var(--color-text);transition:background .3s" style-hover="background:var(--color-accent-700)">
+        <div style="width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:rgba(255,255,255,.14)"><i data-lucide="plus" style="width:22px;height:22px"></i></div>
+        <div><div style="font-family:var(--font-heading);font-weight:800;font-size:17px;letter-spacing:-.01em">Outras especialidades</div>
+        <div style="font-size:13px;opacity:.7;margin-top:6px">Fale com a nossa equipe</div></div>
+      </a>
+    </div>
+
+    <div data-reveal style="display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:20px">
+      <sc-if value="{{ flags }}" hint-placeholder-val="{{ true }}">
+        <span style="display:inline-flex;align-items:center;gap:7px;font-size:10.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--sky-ink);background:var(--sky);border:1px solid var(--sky-line);padding:5px 11px;border-radius:999px">
+          <i data-lucide="info" style="width:13px;height:13px"></i>Confirmar antes de publicar</span>
+      </sc-if>
+      <p style="margin:0;font-size:14px;color:rgba(13,27,22,.55)">As especialidades disponíveis e a agenda de cada profissional podem variar. Consulte nossa equipe.</p>
+    </div>
+  </div>
+</section>
+
+<section id="exames" style="padding:clamp(72px,9vw,120px) 0;background:var(--color-surface);border-top:1px solid var(--color-divider);border-bottom:1px solid var(--color-divider)">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,44px)">
+    <div data-reveal style="max-width:640px;margin-bottom:44px">
+      <div style="font-size:11.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--color-accent-700);margin-bottom:16px">Exames e procedimentos</div>
+      <h2 style="font-size:clamp(30px,3.8vw,46px);line-height:1.06;letter-spacing:-.03em;margin:0;text-wrap:balance">Consulta e exame no mesmo endereço.</h2>
+      <p style="font-size:16.5px;line-height:1.65;color:rgba(13,27,22,.62);margin:20px 0 0">Sem precisar marcar em outro lugar, esperar semanas ou atravessar a cidade para receber o resultado.</p>
+    </div>
+    <div data-reveal style="display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr))">
+      <div style="background:#fff;border:1px solid var(--color-divider);border-radius:20px;padding:30px;display:flex;flex-direction:column;gap:14px;box-shadow:var(--shadow-sm);transition:transform .3s,box-shadow .3s" style-hover="transform:translateY(-4px);box-shadow:var(--shadow-md)">
+        <div style="width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:var(--tint);color:var(--color-accent-700)"><i data-lucide="flask-conical" style="width:24px;height:24px"></i></div>
+        <h3 style="font-size:21px;margin:6px 0 0;letter-spacing:-.02em">Exames laboratoriais</h3>
+        <p style="margin:0;font-size:15px;line-height:1.6;color:rgba(13,27,22,.62);flex:1">Coleta na própria clínica, com orientação sobre preparo e prazos antes de marcar.</p>
+        <a href="{{ wa.exames }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-family:var(--font-heading);font-weight:800;font-size:14.5px;color:var(--color-accent-700)">Marcar exame<i data-lucide="arrow-right" style="width:16px;height:16px"></i></a>
+      </div>
+      <div style="background:#fff;border:1px solid var(--color-divider);border-radius:20px;padding:30px;display:flex;flex-direction:column;gap:14px;box-shadow:var(--shadow-sm);transition:transform .3s,box-shadow .3s" style-hover="transform:translateY(-4px);box-shadow:var(--shadow-md)">
+        <div style="width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:var(--sky);color:var(--sky-ink)"><i data-lucide="scan" style="width:24px;height:24px"></i></div>
+        <h3 style="font-size:21px;margin:6px 0 0;letter-spacing:-.02em">Ultrassonografia</h3>
+        <p style="margin:0;font-size:15px;line-height:1.6;color:rgba(13,27,22,.62);flex:1">Exames de imagem realizados na clínica, com equipamento e ambiente preparados para o seu conforto.</p>
+        <a href="{{ wa.exames }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-family:var(--font-heading);font-weight:800;font-size:14.5px;color:var(--color-accent-700)">Marcar ultrassom<i data-lucide="arrow-right" style="width:16px;height:16px"></i></a>
+      </div>
+      <div style="background:#fff;border:1px solid var(--color-divider);border-radius:20px;padding:30px;display:flex;flex-direction:column;gap:14px;box-shadow:var(--shadow-sm);transition:transform .3s,box-shadow .3s" style-hover="transform:translateY(-4px);box-shadow:var(--shadow-md)">
+        <div style="width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:var(--tint);color:var(--color-accent-700)"><i data-lucide="clipboard-check" style="width:24px;height:24px"></i></div>
+        <h3 style="font-size:21px;margin:6px 0 0;letter-spacing:-.02em">Check-up preventivo</h3>
+        <p style="margin:0;font-size:15px;line-height:1.6;color:rgba(13,27,22,.62);flex:1">Consulta e exames combinados para acompanhar a sua saúde com regularidade.</p>
+        <a href="{{ wa.exames }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-family:var(--font-heading);font-weight:800;font-size:14.5px;color:var(--color-accent-700)">Saber mais<i data-lucide="arrow-right" style="width:16px;height:16px"></i></a>
+      </div>
+    </div>
+    <div data-reveal style="display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:20px">
+      <sc-if value="{{ flags }}" hint-placeholder-val="{{ true }}">
+        <span style="display:inline-flex;align-items:center;gap:7px;font-size:10.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--sky-ink);background:var(--sky);border:1px solid var(--sky-line);padding:5px 11px;border-radius:999px">
+          <i data-lucide="info" style="width:13px;height:13px"></i>Confirmar antes de publicar</span>
+      </sc-if>
+      <p style="margin:0;font-size:14px;color:rgba(13,27,22,.55)">A lista completa de exames, preparos e prazos deve ser confirmada com a clínica.</p>
+    </div>
+  </div>
+</section>
+
+<section id="odontologia" style="padding:clamp(72px,9vw,120px) 0;background:#fff">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,44px)">
+    <div data-reveal style="max-width:640px;margin-bottom:44px">
+      <div style="font-size:11.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--color-accent-700);margin-bottom:16px">Em destaque</div>
+      <h2 style="font-size:clamp(30px,3.8vw,46px);line-height:1.06;letter-spacing:-.03em;margin:0;text-wrap:balance">Cuidado para cada fase da vida.</h2>
+    </div>
+    <div data-reveal style="display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr))">
+      <article style="display:flex;flex-direction:column;gap:20px">
+        <div style="position:relative;width:100%;aspect-ratio:5/4;border-radius:20px;overflow:hidden;background:var(--color-surface)">
+          <image-slot id="cv-odonto" shape="rect" placeholder="Foto: consultório odontológico"></image-slot>
+        </div>
+        <div>
+          <div style="display:inline-flex;align-items:center;gap:8px;color:var(--color-accent-700);font-size:11.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px"><i data-lucide="smile" style="width:15px;height:15px"></i>Odontologia</div>
+          <h3 style="font-size:23px;margin:0 0 10px;letter-spacing:-.02em">Sorriso cuidado sem pesar no orçamento</h3>
+          <p style="margin:0 0 16px;font-size:15.5px;line-height:1.6;color:rgba(13,27,22,.62)">Avaliação e tratamento odontológico com a mesma facilidade de agendamento das consultas médicas.</p>
+          <a href="{{ wa.odonto }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-family:var(--font-heading);font-weight:800;font-size:14.5px;color:var(--color-accent-700)">Agendar avaliação<i data-lucide="arrow-right" style="width:16px;height:16px"></i></a>
+        </div>
+      </article>
+      <article style="display:flex;flex-direction:column;gap:20px">
+        <div style="position:relative;width:100%;aspect-ratio:5/4;border-radius:20px;overflow:hidden;background:var(--color-surface)">
+          <image-slot id="cv-pediatria" shape="rect" placeholder="Foto: pediatra atendendo criança"></image-slot>
+        </div>
+        <div>
+          <div style="display:inline-flex;align-items:center;gap:8px;color:var(--color-accent-700);font-size:11.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px"><i data-lucide="baby" style="width:15px;height:15px"></i>Pediatria</div>
+          <h3 style="font-size:23px;margin:0 0 10px;letter-spacing:-.02em">Acolhimento para os pequenos</h3>
+          <p style="margin:0 0 16px;font-size:15.5px;line-height:1.6;color:rgba(13,27,22,.62)">Consulta pediátrica com tempo para ouvir os pais, tirar dúvidas e acompanhar o crescimento.</p>
+          <a href="{{ wa.hero }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-family:var(--font-heading);font-weight:800;font-size:14.5px;color:var(--color-accent-700)">Agendar pediatria<i data-lucide="arrow-right" style="width:16px;height:16px"></i></a>
+        </div>
+      </article>
+      <article style="display:flex;flex-direction:column;gap:20px">
+        <div style="position:relative;width:100%;aspect-ratio:5/4;border-radius:20px;overflow:hidden;background:var(--color-surface)">
+          <image-slot id="cv-derma" shape="rect" placeholder="Foto: consulta dermatológica"></image-slot>
+        </div>
+        <div>
+          <div style="display:inline-flex;align-items:center;gap:8px;color:var(--color-accent-700);font-size:11.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px"><i data-lucide="sparkles" style="width:15px;height:15px"></i>Dermatologia</div>
+          <h3 style="font-size:23px;margin:0 0 10px;letter-spacing:-.02em">Pele avaliada por quem entende</h3>
+          <p style="margin:0 0 16px;font-size:15.5px;line-height:1.6;color:rgba(13,27,22,.62)">Da consulta de rotina ao acompanhamento de tratamentos, com orientação clara do início ao fim.</p>
+          <a href="{{ wa.hero }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-family:var(--font-heading);font-weight:800;font-size:14.5px;color:var(--color-accent-700)">Agendar dermatologia<i data-lucide="arrow-right" style="width:16px;height:16px"></i></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="sobre" style="padding:clamp(72px,9vw,120px) 0;background:var(--color-text);color:#fff">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,44px);display:grid;gap:clamp(36px,5vw,72px);grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));align-items:center">
+    <div data-reveal style="position:relative;width:100%;aspect-ratio:4/3.4;border-radius:24px;overflow:hidden;background:rgba(255,255,255,.08)">
+      <image-slot id="cv-sobre" shape="rect" placeholder="Foto: recepção ou equipe da clínica"></image-slot>
+    </div>
+    <div data-reveal>
+      <div style="font-size:11.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--color-accent);margin-bottom:16px">Sobre a Clin Vital</div>
+      <h2 style="font-size:clamp(28px,3.4vw,42px);line-height:1.08;letter-spacing:-.03em;margin:0;color:#fff;text-wrap:balance">Cuidar de perto é o que nos move.</h2>
+      <p style="font-size:16.5px;line-height:1.7;color:rgba(255,255,255,.72);margin:22px 0 0">A Clin Vital Saúde Popular nasceu com a missão de tornar o acesso à saúde mais simples, rápido e acessível para toda a população.</p>
+      <p style="font-size:16.5px;line-height:1.7;color:rgba(255,255,255,.72);margin:16px 0 0">A clínica reúne diversas especialidades em um único lugar, permitindo que o paciente realize consultas, exames e procedimentos com praticidade, atendimento humanizado e excelente custo-benefício.</p>
+      <div style="display:grid;gap:1px;background:var(--color-text);border-radius:16px;overflow:hidden;grid-template-columns:repeat(auto-fit,minmax(min(150px,100%),1fr));margin-top:34px">
+        <div style="background:var(--color-text);padding:22px 20px;box-shadow:0 0 0 1px rgba(255,255,255,.14)"><i data-lucide="heart-handshake" style="width:20px;height:20px;color:var(--color-accent)"></i><div style="font-family:var(--font-heading);font-weight:800;font-size:15px;margin-top:12px">Acolhimento</div><div style="font-size:13.5px;color:rgba(255,255,255,.55);margin-top:4px">Atendimento próximo da comunidade.</div></div>
+        <div style="background:var(--color-text);padding:22px 20px;box-shadow:0 0 0 1px rgba(255,255,255,.14)"><i data-lucide="badge-check" style="width:20px;height:20px;color:var(--color-accent)"></i><div style="font-family:var(--font-heading);font-weight:800;font-size:15px;margin-top:12px">Profissionalismo</div><div style="font-size:13.5px;color:rgba(255,255,255,.55);margin-top:4px">Equipe especializada e estrutura moderna.</div></div>
+        <div style="background:var(--color-text);padding:22px 20px;box-shadow:0 0 0 1px rgba(255,255,255,.14)"><i data-lucide="wallet" style="width:20px;height:20px;color:var(--color-accent)"></i><div style="font-family:var(--font-heading);font-weight:800;font-size:15px;margin-top:12px">Acessibilidade</div><div style="font-size:13.5px;color:rgba(255,255,255,.55);margin-top:4px">Saúde de qualidade com valor justo.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:clamp(72px,9vw,120px) 0;background:#fff">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,44px)">
+    <div data-reveal style="max-width:560px;margin-bottom:48px">
+      <div style="font-size:11.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--color-accent-700);margin-bottom:16px">Como agendar</div>
+      <h2 style="font-size:clamp(30px,3.8vw,46px);line-height:1.06;letter-spacing:-.03em;margin:0;text-wrap:balance">Quatro passos e pronto.</h2>
+    </div>
+    <div data-reveal style="display:grid;gap:0;grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr));border-top:2px solid var(--color-divider)">
+      <div style="padding:30px 24px 30px 0;border-right:1px solid var(--color-divider)">
+        <div style="font-family:var(--font-heading);font-weight:800;font-size:44px;line-height:1;color:var(--tint-2);letter-spacing:-.04em">01</div>
+        <div style="font-family:var(--font-heading);font-weight:800;font-size:18px;margin:16px 0 8px;letter-spacing:-.01em">Escolha a especialidade</div>
+        <div style="font-size:14.5px;line-height:1.55;color:rgba(13,27,22,.6)">Consulta, exame ou odontologia — o que você precisa hoje.</div>
+      </div>
+      <div style="padding:30px 24px;border-right:1px solid var(--color-divider)">
+        <div style="font-family:var(--font-heading);font-weight:800;font-size:44px;line-height:1;color:var(--tint-2);letter-spacing:-.04em">02</div>
+        <div style="font-family:var(--font-heading);font-weight:800;font-size:18px;margin:16px 0 8px;letter-spacing:-.01em">Chame no WhatsApp</div>
+        <div style="font-size:14.5px;line-height:1.55;color:rgba(13,27,22,.6)">Nossa equipe confirma horário, valor e preparo necessário.</div>
+      </div>
+      <div style="padding:30px 24px;border-right:1px solid var(--color-divider)">
+        <div style="font-family:var(--font-heading);font-weight:800;font-size:44px;line-height:1;color:var(--tint-2);letter-spacing:-.04em">03</div>
+        <div style="font-family:var(--font-heading);font-weight:800;font-size:18px;margin:16px 0 8px;letter-spacing:-.01em">Compareça no horário</div>
+        <div style="font-size:14.5px;line-height:1.55;color:rgba(13,27,22,.6)">Estamos na Galeria Rayol, no coração do Jacintinho.</div>
+      </div>
+      <div style="padding:30px 0 30px 24px">
+        <div style="font-family:var(--font-heading);font-weight:800;font-size:44px;line-height:1;color:var(--tint-2);letter-spacing:-.04em">04</div>
+        <div style="font-family:var(--font-heading);font-weight:800;font-size:18px;margin:16px 0 8px;letter-spacing:-.01em">Seja bem atendido</div>
+        <div style="font-size:14.5px;line-height:1.55;color:rgba(13,27,22,.6)">Cuidado com tempo, atenção e orientação clara.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:0 0 clamp(72px,9vw,120px);background:#fff">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,44px)">
+    <div data-reveal style="display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr))">
+      <div style="position:relative;width:100%;aspect-ratio:3/4;border-radius:18px;overflow:hidden;background:var(--color-surface)"><image-slot id="cv-gal-1" shape="rect" placeholder="Recepção"></image-slot></div>
+      <div style="position:relative;width:100%;aspect-ratio:3/4;border-radius:18px;overflow:hidden;background:var(--color-surface)"><image-slot id="cv-gal-2" shape="rect" placeholder="Consultório"></image-slot></div>
+      <div style="position:relative;width:100%;aspect-ratio:3/4;border-radius:18px;overflow:hidden;background:var(--color-surface)"><image-slot id="cv-gal-3" shape="rect" placeholder="Equipe"></image-slot></div>
+      <div style="position:relative;width:100%;aspect-ratio:3/4;border-radius:18px;overflow:hidden;background:var(--color-surface)"><image-slot id="cv-gal-4" shape="rect" placeholder="Paciente sendo atendido"></image-slot></div>
+    </div>
+    <sc-if value="{{ flags }}" hint-placeholder-val="{{ true }}">
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:18px">
+        <span style="display:inline-flex;align-items:center;gap:7px;font-size:10.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--sky-ink);background:var(--sky);border:1px solid var(--sky-line);padding:5px 11px;border-radius:999px"><i data-lucide="image" style="width:13px;height:13px"></i>Espaço para fotos reais</span>
+        <p style="margin:0;font-size:14px;color:rgba(13,27,22,.55)">Arraste as fotos da clínica para cada espaço acima antes de publicar.</p>
+      </div>
+    </sc-if>
+  </div>
+</section>
+
+<section style="padding:clamp(72px,9vw,120px) 0;background:var(--color-surface);border-top:1px solid var(--color-divider);border-bottom:1px solid var(--color-divider)">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,44px)">
+    <div data-reveal style="display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:16px;margin-bottom:44px">
+      <div>
+        <div style="font-size:11.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--color-accent-700);margin-bottom:16px">Depoimentos</div>
+        <h2 style="font-size:clamp(30px,3.8vw,46px);line-height:1.06;letter-spacing:-.03em;margin:0;text-wrap:balance">Quem já foi atendido.</h2>
+      </div>
+      <sc-if value="{{ flags }}" hint-placeholder-val="{{ true }}">
+        <span style="display:inline-flex;align-items:center;gap:7px;font-size:10.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--sky-ink);background:var(--sky);border:1px solid var(--sky-line);padding:6px 12px;border-radius:999px"><i data-lucide="info" style="width:13px;height:13px"></i>Textos de exemplo — substituir por depoimentos reais</span>
+      </sc-if>
+    </div>
+    <div data-reveal style="display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(min(290px,100%),1fr))">
+      <figure style="background:#fff;border:1px solid var(--color-divider);border-radius:20px;padding:30px;margin:0;display:flex;flex-direction:column;gap:18px">
+        <i data-lucide="quote" style="width:24px;height:24px;color:var(--tint-2)"></i>
+        <blockquote style="margin:0;font-size:16.5px;line-height:1.65;color:rgba(13,27,22,.8)">Consegui marcar a consulta pelo WhatsApp em poucos minutos e fui atendida no mesmo dia do exame. Saí com tudo resolvido.</blockquote>
+        <figcaption style="font-size:13px;color:rgba(13,27,22,.5);margin-top:auto">Nome do paciente · Depoimento de exemplo</figcaption>
+      </figure>
+      <figure style="background:#fff;border:1px solid var(--color-divider);border-radius:20px;padding:30px;margin:0;display:flex;flex-direction:column;gap:18px">
+        <i data-lucide="quote" style="width:24px;height:24px;color:var(--tint-2)"></i>
+        <blockquote style="margin:0;font-size:16.5px;line-height:1.65;color:rgba(13,27,22,.8)">Levei meu filho na pediatria e fomos muito bem recebidos. O médico explicou tudo com calma, sem pressa.</blockquote>
+        <figcaption style="font-size:13px;color:rgba(13,27,22,.5);margin-top:auto">Nome do paciente · Depoimento de exemplo</figcaption>
+      </figure>
+      <figure style="background:#fff;border:1px solid var(--color-divider);border-radius:20px;padding:30px;margin:0;display:flex;flex-direction:column;gap:18px">
+        <i data-lucide="quote" style="width:24px;height:24px;color:var(--tint-2)"></i>
+        <blockquote style="margin:0;font-size:16.5px;line-height:1.65;color:rgba(13,27,22,.8)">Preço justo e atendimento de clínica grande. Recomendo para quem procura consulta rápida aqui no bairro.</blockquote>
+        <figcaption style="font-size:13px;color:rgba(13,27,22,.5);margin-top:auto">Nome do paciente · Depoimento de exemplo</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="localizacao" style="padding:clamp(72px,9vw,120px) 0;background:#fff">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,44px)">
+    <div data-reveal style="display:grid;gap:clamp(32px,4vw,56px);grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr));align-items:start">
+      <div>
+        <div style="font-size:11.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--color-accent-700);margin-bottom:16px">Onde estamos</div>
+        <h2 style="font-size:clamp(30px,3.8vw,46px);line-height:1.06;letter-spacing:-.03em;margin:0 0 28px;text-wrap:balance">Fácil de chegar,<br>no Jacintinho.</h2>
+        <div style="display:flex;gap:14px;padding:20px 0;border-top:1px solid var(--color-divider)">
+          <i data-lucide="map-pin" style="width:20px;height:20px;color:var(--color-accent);flex:none;margin-top:2px"></i>
+          <div><div style="font-family:var(--font-heading);font-weight:800;font-size:15px;margin-bottom:5px">Endereço</div>
+          <div style="font-size:15px;line-height:1.6;color:rgba(13,27,22,.65)">Rua Comendador José Geraldo da Silva, 101<br>Galeria Rayol — Jacintinho<br>Maceió — AL · CEP 57040-220</div></div>
+        </div>
+        <div style="display:flex;gap:14px;padding:20px 0;border-top:1px solid var(--color-divider)">
+          <i data-lucide="phone" style="width:20px;height:20px;color:var(--color-accent);flex:none;margin-top:2px"></i>
+          <div><div style="font-family:var(--font-heading);font-weight:800;font-size:15px;margin-bottom:5px">WhatsApp</div>
+          <div style="font-size:15px;line-height:1.6;color:rgba(13,27,22,.65)">(82) 98825-8293</div></div>
+        </div>
+        <div style="display:flex;gap:14px;padding:20px 0;border-top:1px solid var(--color-divider);border-bottom:1px solid var(--color-divider)">
+          <i data-lucide="clock" style="width:20px;height:20px;color:var(--color-accent);flex:none;margin-top:2px"></i>
+          <div style="flex:1"><div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:5px"><span style="font-family:var(--font-heading);font-weight:800;font-size:15px">Horário de funcionamento</span>
+            <sc-if value="{{ flags }}" hint-placeholder-val="{{ true }}">
+              <span style="font-size:10.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--sky-ink);background:var(--sky);border:1px solid var(--sky-line);padding:4px 9px;border-radius:999px">Preencher</span>
+            </sc-if></div>
+          <div style="font-size:15px;line-height:1.6;color:rgba(13,27,22,.65)">Segunda a sexta — a confirmar<br>Sábado — a confirmar</div></div>
+        </div>
+        <a href="{{ wa.cta }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;margin-top:28px;background:var(--color-accent);color:#fff;text-decoration:none;font-family:var(--font-heading);font-weight:800;font-size:15.5px;padding:16px 26px;border-radius:999px;box-shadow:0 10px 26px color-mix(in srgb, var(--color-accent) 32%, transparent);transition:transform .25s,background .25s" style-hover="background:var(--color-accent-600);transform:translateY(-2px)">
+          <svg width="18" height="18"><use href="#wa"></use></svg>Falar com a recepção</a>
+      </div>
+      <div style="width:100%;aspect-ratio:1/1;border-radius:22px;overflow:hidden;border:1px solid var(--color-divider);background:var(--color-surface);box-shadow:var(--shadow-sm)">
+        <iframe title="Mapa — Clin Vital Saúde Popular, Jacintinho, Maceió" src="https://www.google.com/maps?q=Rua%20Comendador%20Jos%C3%A9%20Geraldo%20da%20Silva%2C%20101%2C%20Jacintinho%2C%20Macei%C3%B3%20-%20AL%2C%2057040-220&output=embed" loading="lazy" referrerPolicy="no-referrer-when-downgrade" style="width:100%;height:100%;border:0;display:block"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:clamp(64px,8vw,104px) 0;background:var(--color-accent);color:#fff">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,44px);display:grid;gap:clamp(28px,4vw,56px);grid-template-columns:repeat(auto-fit,minmax(min(360px,100%),1fr));align-items:center">
+    <div>
+      <h2 style="font-size:clamp(32px,4.2vw,52px);line-height:1.04;letter-spacing:-.035em;margin:0;color:#fff;text-wrap:balance">Agende sua consulta agora mesmo.</h2>
+      <p style="font-size:17px;line-height:1.6;color:rgba(255,255,255,.82);margin:20px 0 0;max-width:44ch">Nossa equipe está pronta para atender você e sua família. É rápido e sem burocracia.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:flex-start;gap:14px">
+      <a href="{{ wa.cta }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:12px;background:#fff;color:var(--color-accent-700);text-decoration:none;font-family:var(--font-heading);font-weight:800;font-size:17px;padding:20px 32px;border-radius:999px;box-shadow:0 16px 40px rgba(0,0,0,.16);transition:transform .25s,box-shadow .25s" style-hover="transform:translateY(-2px);box-shadow:0 22px 50px rgba(0,0,0,.22)">
+        <svg width="21" height="21"><use href="#wa"></use></svg>Agendar pelo WhatsApp</a>
+      <div style="font-size:14px;color:rgba(255,255,255,.75);display:flex;align-items:center;gap:8px"><i data-lucide="phone" style="width:15px;height:15px"></i>(82) 98825-8293</div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer style="background:var(--color-text);color:rgba(255,255,255,.62);padding:clamp(56px,7vw,84px) 0 32px">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,44px)">
+    <div style="display:grid;gap:40px;grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr))">
+      <div>
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px">
+          <img src="assets/logo-clinvital.png" alt="Clin Vital Saúde Popular" width="44" height="44" style="width:44px;height:44px;border-radius:12px;object-fit:cover">
+          <span style="display:flex;flex-direction:column;line-height:1.05;color:#fff">
+            <span style="font-family:var(--font-heading);font-weight:800;font-size:17px;letter-spacing:-.02em">CLIN VITAL</span>
+            <span style="font-size:10px;letter-spacing:.18em;text-transform:uppercase;opacity:.55">Saúde Popular</span>
+          </span>
+        </div>
+        <p style="font-size:14.5px;line-height:1.6;margin:0;max-width:34ch">Sua saúde é de Vital importância. Consultas, exames e odontologia com valor acessível em Maceió.</p>
+      </div>
+      <div>
+        <div style="font-family:var(--font-heading);font-weight:800;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#fff;margin-bottom:16px">Navegação</div>
+        <div style="display:flex;flex-direction:column;gap:10px;font-size:14.5px">
+          <a href="#especialidades" style="color:rgba(255,255,255,.62);text-decoration:none" style-hover="color:#fff">Especialidades</a>
+          <a href="#exames" style="color:rgba(255,255,255,.62);text-decoration:none" style-hover="color:#fff">Exames</a>
+          <a href="#odontologia" style="color:rgba(255,255,255,.62);text-decoration:none" style-hover="color:#fff">Odontologia</a>
+          <a href="#sobre" style="color:rgba(255,255,255,.62);text-decoration:none" style-hover="color:#fff">Sobre a clínica</a>
+          <a href="#localizacao" style="color:rgba(255,255,255,.62);text-decoration:none" style-hover="color:#fff">Localização</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:var(--font-heading);font-weight:800;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#fff;margin-bottom:16px">Contato</div>
+        <div style="font-size:14.5px;line-height:1.7">Rua Comendador José Geraldo da Silva, 101<br>Galeria Rayol — Jacintinho<br>Maceió — AL · 57040-220<br><span style="color:#fff">(82) 98825-8293</span></div>
+      </div>
+      <div>
+        <div style="font-family:var(--font-heading);font-weight:800;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#fff;margin-bottom:16px">Agendamento</div>
+        <a href="{{ wa.float }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:var(--color-accent);color:#fff;text-decoration:none;font-family:var(--font-heading);font-weight:800;font-size:14.5px;padding:14px 22px;border-radius:999px;transition:background .25s" style-hover="background:var(--color-accent-600)">
+          <svg width="17" height="17"><use href="#wa"></use></svg>Chamar no WhatsApp</a>
+        <div style="font-size:13.5px;margin-top:14px;line-height:1.6">Atendimento e agendamento pelo WhatsApp.</div>
+      </div>
+    </div>
+    <div style="margin-top:48px;padding-top:24px;border-top:1px solid rgba(255,255,255,.14);display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;font-size:13px">
+      <div>© 2026 Clin Vital Saúde Popular. Todos os direitos reservados.</div>
+      <div style="display:flex;gap:20px"><a href="#inicio" style="color:rgba(255,255,255,.62);text-decoration:none" style-hover="color:#fff">Política de Privacidade</a><a href="#inicio" style="color:rgba(255,255,255,.62);text-decoration:none" style-hover="color:#fff">Voltar ao topo</a></div>
+    </div>
+    <div style="margin-top:20px;font-size:11.5px;line-height:1.6;color:rgba(255,255,255,.38);max-width:88ch">Informações sobre especialidades, exames, horários e equipe devem ser confirmadas com a clínica antes da publicação. Este site não substitui avaliação médica presencial.</div>
+  </div>
+</footer>
+
+<sc-if value="{{ floating }}" hint-placeholder-val="{{ true }}">
+  <a href="{{ wa.float }}" target="_blank" rel="noopener" aria-label="Agendar pelo WhatsApp" style="position:fixed;right:clamp(16px,3vw,28px);bottom:clamp(16px,3vw,28px);z-index:70;display:inline-flex;align-items:center;gap:10px;background:var(--color-accent);color:#fff;text-decoration:none;font-family:var(--font-heading);font-weight:800;font-size:15px;padding:15px 22px;border-radius:999px;box-shadow:0 14px 34px rgba(13,27,22,.28);transition:transform .25s,background .25s" style-hover="background:var(--color-accent-600);transform:translateY(-2px)">
+    <svg width="21" height="21"><use href="#wa"></use></svg>Agendar
+  </a>
+</sc-if>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;whatsapp&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;5582988258293&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contato&quot;},&quot;palette&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:[&quot;#17B25F&quot;,&quot;#0C7A41&quot;],&quot;options&quot;:[[&quot;#17B25F&quot;,&quot;#0C7A41&quot;],[&quot;#0E9F7E&quot;,&quot;#075C4B&quot;],[&quot;#2F7DBE&quot;,&quot;#1F5F91&quot;],[&quot;#0F766E&quot;,&quot;#0A4F4A&quot;]],&quot;tsType&quot;:&quot;string[]&quot;,&quot;section&quot;:&quot;Marca&quot;},&quot;showPlaceholderFlags&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Conteúdo&quot;},&quot;showFloatingCta&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Conteúdo&quot;}}">
+class Component extends DCLogic {
+  state = { menu: false };
+  headerRef = React.createRef();
+
+  get num() { return String(this.props.whatsapp ?? '5582988258293').replace(/\D/g, ''); }
+  link(m) { return 'https://wa.me/' + this.num + '?text=' + encodeURIComponent(m); }
+
+  componentDidMount() {
+    this.applyAccent();
+    this.icons();
+    this.onScroll = () => {
+      const h = this.headerRef.current; if (!h) return;
+      const s = window.scrollY > 12;
+      h.style.background = s ? 'rgba(255,255,255,.88)' : '#ffffff';
+      h.style.boxShadow = s ? '0 6px 28px rgba(13,27,22,.08)' : 'none';
+    };
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    setTimeout(() => this.reveal(), 80);
+  }
+  componentDidUpdate() { this.applyAccent(); this.icons(); }
+  componentWillUnmount() { window.removeEventListener('scroll', this.onScroll); }
+
+  applyAccent() {
+    const p = this.props.palette;
+    const arr = Array.isArray(p) ? p : (typeof p === 'string' && p ? [p] : null);
+    if (!arr || !arr.length) return;
+    const r = document.documentElement.style;
+    r.setProperty('--color-accent', arr[0]);
+    r.setProperty('--color-accent-600', arr[1] || arr[0]);
+    r.setProperty('--color-accent-700', arr[1] || arr[0]);
+  }
+
+  icons() {
+    const run = () => { try { window.lucide && window.lucide.createIcons(); } catch (e) {} };
+    if (window.lucide) return run();
+    let n = 0;
+    const t = setInterval(() => { if (window.lucide || ++n > 60) { clearInterval(t); run(); } }, 100);
+  }
+
+  reveal() {
+    if (!('IntersectionObserver' in window)) return;
+    const io = new IntersectionObserver((es) => es.forEach(e => {
+      if (e.isIntersecting) { e.target.setAttribute('data-in', ''); io.unobserve(e.target); }
+    }), { rootMargin: '0px 0px -6% 0px' });
+    document.querySelectorAll('[data-reveal]').forEach(el => {
+      if (el.getBoundingClientRect().top > window.innerHeight * 0.92) {
+        el.setAttribute('data-armed', '');
+        io.observe(el);
+      }
+    });
+  }
+
+  renderVals() {
+    const t = 'Olá! Vim pelo site da Clin Vital e gostaria de ';
+    return {
+      wa: {
+        header: this.link(t + 'agendar uma consulta.'),
+        hero: this.link(t + 'agendar uma consulta.'),
+        esp: this.link(t + 'saber quais especialidades estão disponíveis.'),
+        exames: this.link(t + 'agendar um exame.'),
+        odonto: this.link(t + 'agendar uma avaliação odontológica.'),
+        cta: this.link(t + 'agendar meu atendimento.'),
+        float: this.link(t + 'agendar um atendimento.')
+      },
+      flags: this.props.showPlaceholderFlags ?? true,
+      floating: this.props.showFloatingCta ?? true,
+      menuOpen: this.state.menu,
+      headerRef: this.headerRef,
+      toggleMenu: () => this.setState(s => ({ menu: !s.menu })),
+      closeMenu: () => this.setState({ menu: false })
+    };
+  }
+}
+</script>
+</body>
+</html>
